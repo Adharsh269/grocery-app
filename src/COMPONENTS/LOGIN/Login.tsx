@@ -1,11 +1,8 @@
 import axios from "axios";
 import "./Login.css";
 import { useState } from "react";
-<<<<<<< HEAD
-import {useNavigate } from "react-router-dom";
-=======
-import {Link, useNavigate } from "react-router-dom";
->>>>>>> 88631b4 (second commit)
+import {Link,useNavigate } from "react-router-dom";
+
 function Login() {
   const [username, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -72,10 +69,7 @@ function Login() {
                 </span>
                 <i className="button__icon fas fa-chevron-right"></i>
               </button>
-<<<<<<< HEAD
-=======
               didn't have account<Link to='/create'>createA</Link>
->>>>>>> 88631b4 (second commit)
             </form>
           </div>
           <div className="screen__background">

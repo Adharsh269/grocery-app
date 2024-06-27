@@ -9,14 +9,8 @@ function ADD() {
     price: string;
     url:string;
   }
-<<<<<<< HEAD
   const [items , setItems] =useState<MyItems[]>([]);
-
-=======
-  
-  const [items , setItems] =useState<MyItems[]>([]);
-  
->>>>>>> 88631b4 (second commit)
+  //const [items , setItems] =useState<MyItems[]>([]);
   useEffect(()=>{
     axios
       .get<MyItems[]>("http://localhost:8080/get/prd")
@@ -25,8 +19,6 @@ function ADD() {
       })
       .catch((error)=>console.log(error))
   },[])
-<<<<<<< HEAD
-=======
 
   const addCart = (e: any) => {
     e.preventDefault();
@@ -35,8 +27,6 @@ function ADD() {
       .post("http://localhost:8080/cart/add",items)
         
   };
- 
->>>>>>> 88631b4 (second commit)
   return (
     <div>
       <nav className="navigation">
@@ -179,11 +169,9 @@ function ADD() {
               <span className="quantity">{it.quantity}</span>
               <span className="price">{it.price}</span>
               <a href="#" className="cart-btn">
-<<<<<<< HEAD
                 <i className="fas fa-shopping-bag"></i> Add Cart
-=======
                 <button onClick={addCart}><i className="fas fa-shopping-bag"></i> Add Cart</button>
->>>>>>> 88631b4 (second commit)
+
               </a>
               <a href="#" className="like-btn">
                 <i className="far fa-heart"></i>
